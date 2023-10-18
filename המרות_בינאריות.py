@@ -10,8 +10,8 @@ def invert_and_add_one(binary):
     
      result = bin(int(inverted, 2) + 1)[2:].zfill(len(binary))
      return result
-decimal = input("enter a decimal number: ")
-num_bits = input("enter number of bits: ")
+decimal = int(input("enter a decimal number: "))
+num_bits = int(input("enter number of bits: "))
 
 binary = decimal_to_binary(decimal, num_bits)
 result = invert_and_add_one(binary)
