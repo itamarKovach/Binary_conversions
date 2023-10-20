@@ -13,7 +13,7 @@ def invert_and_add_one(binary):
 decimal = int(input("enter a decimal number: "))
 num_bits = int(input("enter number of bits: "))
 
-binary = int(decimal_to_binary(decimal, num_bits))
-result = int(invert_and_add_one(binary))
+binary = decimal_to_binary(decimal, num_bits)
+result = invert_and_add_one(binary)
 
 print("the binary value of negative " + str(decimal) + " is: " + result)
